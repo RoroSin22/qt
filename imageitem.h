@@ -7,10 +7,10 @@
 #include <QGridLayout>
 
 
-class imageitem : public QWidget{
+class ImageItem : public QWidget{
     Q_OBJECT
 public:
-    explicit imageitem(QWidget *parent = nullptr);
+    explicit ImageItem(QWidget *parent = nullptr);
     void setData(QPixmap Image, QString TitleText, QString InfoText, QString Path);
     QString getPath();
 private:
@@ -23,4 +23,4 @@ signals:
 
 };
 
-#endif // IMAGEITEM_H
+#endif

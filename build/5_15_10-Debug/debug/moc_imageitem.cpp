@@ -21,25 +21,25 @@
 QT_BEGIN_MOC_NAMESPACE
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
-struct qt_meta_stringdata_imageitem_t {
+struct qt_meta_stringdata_ImageItem_t {
     QByteArrayData data[1];
     char stringdata0[10];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-    qptrdiff(offsetof(qt_meta_stringdata_imageitem_t, stringdata0) + ofs \
+    qptrdiff(offsetof(qt_meta_stringdata_ImageItem_t, stringdata0) + ofs \
         - idx * sizeof(QByteArrayData)) \
     )
-static const qt_meta_stringdata_imageitem_t qt_meta_stringdata_imageitem = {
+static const qt_meta_stringdata_ImageItem_t qt_meta_stringdata_ImageItem = {
     {
-QT_MOC_LITERAL(0, 0, 9) // "imageitem"
+QT_MOC_LITERAL(0, 0, 9) // "ImageItem"
 
     },
-    "imageitem"
+    "ImageItem"
 };
 #undef QT_MOC_LITERAL
 
-static const uint qt_meta_data_imageitem[] = {
+static const uint qt_meta_data_ImageItem[] = {
 
  // content:
        8,       // revision
@@ -55,7 +55,7 @@ static const uint qt_meta_data_imageitem[] = {
        0        // eod
 };
 
-void imageitem::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
+void ImageItem::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
     (void)_o;
     (void)_id;
@@ -63,30 +63,30 @@ void imageitem::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, v
     (void)_a;
 }
 
-QT_INIT_METAOBJECT const QMetaObject imageitem::staticMetaObject = { {
+QT_INIT_METAOBJECT const QMetaObject ImageItem::staticMetaObject = { {
     QMetaObject::SuperData::link<QWidget::staticMetaObject>(),
-    qt_meta_stringdata_imageitem.data,
-    qt_meta_data_imageitem,
+    qt_meta_stringdata_ImageItem.data,
+    qt_meta_data_ImageItem,
     qt_static_metacall,
     nullptr,
     nullptr
 } };
 
 
-const QMetaObject *imageitem::metaObject() const
+const QMetaObject *ImageItem::metaObject() const
 {
     return QObject::d_ptr->metaObject ? QObject::d_ptr->dynamicMetaObject() : &staticMetaObject;
 }
 
-void *imageitem::qt_metacast(const char *_clname)
+void *ImageItem::qt_metacast(const char *_clname)
 {
     if (!_clname) return nullptr;
-    if (!strcmp(_clname, qt_meta_stringdata_imageitem.stringdata0))
+    if (!strcmp(_clname, qt_meta_stringdata_ImageItem.stringdata0))
         return static_cast<void*>(this);
     return QWidget::qt_metacast(_clname);
 }
 
-int imageitem::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
+int ImageItem::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 {
     _id = QWidget::qt_metacall(_c, _id, _a);
     return _id;

@@ -1,6 +1,6 @@
 #include "imageitem.h"
 
-imageitem::imageitem(QWidget *parent) : QWidget(parent){
+ImageItem::ImageItem(QWidget *parent) : QWidget(parent){
     img = new QLabel(this);
     title = new QLabel(this);
     info = new QLabel(this);
@@ -13,7 +13,7 @@ imageitem::imageitem(QWidget *parent) : QWidget(parent){
     info->setText("info");
 }
 
-void imageitem::setData(QPixmap Image, QString TitleText, QString InfoText, QString Path){
+void ImageItem::setData(QPixmap Image, QString TitleText, QString InfoText, QString Path){
     img->setPixmap(Image);
     img->setFixedWidth(Image.width());
     title->setText(TitleText);
@@ -21,6 +21,6 @@ void imageitem::setData(QPixmap Image, QString TitleText, QString InfoText, QStr
     path = Path;
 }
 
-QString imageitem::getPath(){
+QString ImageItem::getPath(){
     return path;
 }

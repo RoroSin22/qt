@@ -31,7 +31,8 @@ SOURCES += \
 
 HEADERS += \
         imageitem.h \
-        mainwindow.h
+        mainwindow.h \
+        smartptr.h
 
 FORMS += \
         mainwindow.ui

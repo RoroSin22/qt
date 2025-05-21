@@ -66,7 +66,7 @@ void MainWindow::setImagesList(QString FileName){
         double fSize =f.size() / 1024.;
         QString Info = QString::number(w) + "x" + QString::number(h) + ", " + QString::number(round(fSize * 10) / 10) + "KB";
         QListWidgetItem *item = new QListWidgetItem(ui->listWidget);
-        imageitem *imgitem = new imageitem;
+        ImageItem *imgitem = new ImageItem;
         imgitem->setData(pix.scaledToWidth(90,Qt::SmoothTransformation),f.fileName(),Info, f.filePath());
         item->setSizeHint(imgitem->sizeHint());
         ui->listWidget->setItemWidget(item,imgitem);
@@ -80,7 +80,7 @@ void MainWindow::setOrigin(QString path){
 
 
 void MainWindow::on_listWidget_itemDoubleClicked(QListWidgetItem *item){
-    imageitem *imgitem = qobject_cast <imageitem *>(ui->listWidget->itemWidget(item));
+    ImageItem *imgitem = qobject_cast <ImageItem *>(ui->listWidget->itemWidget(item));
     QPixmap pix(imgitem->getPath());
     imageLabel->setPixmap(pix);
     imageLabel->setFixedSize(pix.width(),pix.height());
